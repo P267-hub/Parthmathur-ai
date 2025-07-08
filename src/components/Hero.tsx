@@ -18,9 +18,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-r from-blue-600 via-red-500 to-blue-900">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-cyan-400/10 blur-3xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-black to-orange-400 blur-3xl"></div>
       
       {/* Floating elements */}
       <div className="absolute top-20 left-20 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
@@ -32,7 +32,6 @@ const Hero = () => {
           <div className="mb-8 relative flex justify-center">
             <ProfileCard
               name="Parth Mathur"
-              image="/photo-parth.jpg"
               description="AI & DS student passionate about building intelligent solutions through code, data & automation."
             />
           </div>

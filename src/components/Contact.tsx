@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin, Instagram, Send } from 'lucide-react';
-
+import { Mail, GithubIcon, Linkedin, InstagramIcon, Send } from 'lucide-react';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -22,9 +21,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: '#', color: 'hover:text-gray-700' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#', color: 'hover:text-blue-700' },
-    { icon: Instagram, label: 'Instagram', href: '#', color: 'hover:text-pink-600' }
+    { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/P267-hub', color: 'hover:text-gray-700' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/parthmathur2411', color: 'hover:text-blue-700' },
+    { icon: InstagramIcon, label: 'Instagram', href: 'https://instagram.com/parthmathur2411', color: 'hover:text-pink-600' }
   ];
 
   return (

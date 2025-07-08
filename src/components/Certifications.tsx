@@ -15,7 +15,7 @@ const Certifications = () => {
       title: 'AWS Cloud Fundamentals',
       issuer: 'Amazon Web Services',
       date: 'Coming Soon',
-      certificateId: 'Pending',
+      certificateId: 'CERT-AWS-PLACEHOLDER',
       verified: false,
       verifyUrl: '#'
     },
@@ -23,7 +23,7 @@ const Certifications = () => {
       title: 'Machine Learning Specialization',
       issuer: 'Coursera',
       date: 'In Progress',
-      certificateId: 'Pending',
+      certificateId: 'CERT-ML-PLACEHOLDER',
       verified: false,
       verifyUrl: '#'
     },
@@ -31,9 +31,17 @@ const Certifications = () => {
       title: 'Python for Data Science',
       issuer: 'Udemy',
       date: 'Planning',
-      certificateId: 'Pending',
+      certificateId: 'CERT-PYDS-PLACEHOLDER',
       verified: false,
       verifyUrl: '#'
+    },
+    {
+      title: 'Daytona India Tour – Jaipur Chapter (Participation)',
+      issuer: 'Daytona | Poornima College of Engineering',
+      date: 'April 29, 2025',
+      certificateId: 'CERT-DAYTONA-2025',
+      verified: true,
+      verifyUrl: '/certificates/daytona-participation.png' // Local path to the image
     }
   ];
 
@@ -104,6 +112,13 @@ const Certifications = () => {
                     </button>
                   )}
                 </div>
+                {cert.verifyUrl && cert.verifyUrl.endsWith('.png') && (
+                  <img
+                    src={cert.verifyUrl}
+                    alt={cert.title}
+                    className="w-full max-w-md rounded-lg shadow-lg mt-4"
+                  />
+                )}
               </div>
             ))}
           </div>
